@@ -12,4 +12,10 @@ public class neueController {
         double getInitMonate = relative / 100;
         return minuitsMonth * getInitMonate;
     }
+    @GetMapping("/uptime/hours")
+    public double calculateMinuteProgram (@RequestParam double relative){
+        double minuitsMonth = 24 * 30;
+        double getInitMonate = relative / 100;
+        return minuitsMonth * getInitMonate;
+    }
 }
