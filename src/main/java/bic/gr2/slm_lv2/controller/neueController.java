@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class neueController {
-    @GetMapping
+    @GetMapping("/uptime")
     public double calculateProgram(@RequestParam double relative){
         double minuitsMonth = 60 * 24 * 30;
         double getInitMonate = relative / 100;
